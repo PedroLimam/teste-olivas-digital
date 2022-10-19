@@ -34,15 +34,11 @@ function SectionPosts(){
                 </div>
 
                 <div className="sectionsPosts__box-rigth">
-
-                    <h4>Outras postagens:</h4>
+                    <h4 className="sectionsPosts__titulo">Outras postagens:</h4>
                     
                     {bdSectionPosts.postsSection.map(el => <CardPosts key={el.id} tema={el.tema}  titulo={el.titulo} data={el.data}/> )}
 
-                    
-
                     <ButtonMore/>
-
                 </div>
             </div>
 

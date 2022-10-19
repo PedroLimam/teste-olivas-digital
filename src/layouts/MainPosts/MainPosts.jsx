@@ -33,9 +33,10 @@ function MainPosts(){
 
                     <div className='mainPosts__box-typeEdate'><span>TECNOLOGIA</span> <p>11/11/2022</p></div>
 
-                    <h3>Contando com a tecnologia para o treinamento de especialistas no atendimento</h3>
+                    <h3 className='mainPosts__titulo'>Contando com a tecnologia para o treinamento de especialistas no atendimento</h3>
 
-                    <p>Muito mais do que saber ouvir e atender as necessidades de um cliente, o Customer Experience
+                    <p className='mainPosts__descricao'>
+                        Muito mais do que saber ouvir e atender as necessidades de um cliente, o Customer Experience
                         visa ir além e oferecer uma experiência que de fato trará muito mais proximidade entre
                         o cliente a marca
                     </p>

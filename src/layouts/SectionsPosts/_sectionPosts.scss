@@ -107,13 +107,15 @@
         }
     
         .sectionsPosts__box-rigth{
-
-            transform: translate(10px, 98px);
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            text-align: left;
+            transform: translate(10px, 98px);
+
     
-            h4{
+            .sectionsPosts__titulo{
+                font-size: 19px;
                 color: #F390A8;
                 margin-bottom: 10px;
             }

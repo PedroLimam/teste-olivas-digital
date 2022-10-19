@@ -7,7 +7,13 @@
     padding: 1px;
     text-align: start;
 
-    .temaCardMain{
+    span{
+        display: block;
+        margin: 5px 0 5px 0;
+        color: $white-titles;
+    }
+
+    .card-postsMain__tema{
         background-image: linear-gradient(to right,  #36b6c8, #6cc7d5);
         border-color: white;
         padding: 2px 8px;
@@ -18,13 +24,7 @@
         border-radius: 35px;
     }
 
-    span{
-        display: block;
-        margin: 5px 0 5px 0;
-        color: $white-titles;
-    }
-
-    p{
+    .card-postsMain__titulo{
         line-height: 130%;
         font-weight: bold;
         margin-bottom: 25px;

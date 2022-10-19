@@ -45,22 +45,6 @@ $gutter: 24px;
     @return ($col / $total) * 100%;
 }
 
-@for $i from 1 through 12{
-    .grid-#{$i}{
-        width: calc(#{grid($i)} - #{$gutter});
-        margin: $gutter / 2;
-        
-        float: left;
-
-        @include responsive(s){
-            width: calc(100% - #{$gutter});
-            margin: $gutter / 2;
-            float: none;
-        }
-    }
-}
-
-
 h3{
   position: relative;
   

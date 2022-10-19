@@ -1,8 +1,44 @@
 import Button from "../Button/Button";
 import logoOlivas from "../../assets/img/logo-olivas.png"
 import './_nav.scss'
+import { useEffect } from "react";
+import gsap from "gsap";
 
 function Nav(){
+
+    useEffect(() => {
+        const tl = gsap.timeline()
+    
+            tl.fromTo(".nav__img-logo",{
+                y: -10,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1
+            })
+            .fromTo(".nav__menu-item",{
+                y: -10,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                delay: 0.1,
+                stagger: {each:0.1}
+            })
+            .fromTo(".btn-home",{
+                y: -10,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+            })
+        },)
 
     return(
         <nav className="nav">  

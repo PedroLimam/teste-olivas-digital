@@ -7,7 +7,7 @@
     padding: 1px;
     text-align: start;
 
-    .temaCard{
+    .card-posts__tema{
         @include button-linear-rosa;
         padding: 2px 8px;
         margin-top: 9px;
@@ -16,15 +16,17 @@
         height: fit-content;
     }
 
+    .card-posts__titulo{
+        line-height: 130%;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: $title-color-1;
+    }
+
     span{
         display: inline-block;
         margin-bottom: 18px;
         color: $sub-title-color;
-    }
-
-    p{
-        line-height: 130%;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
+    }   
 }

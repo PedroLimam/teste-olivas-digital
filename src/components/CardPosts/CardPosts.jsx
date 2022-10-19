@@ -3,9 +3,9 @@ import './_cardPosts.scss'
 function CardPosts({tema, titulo, data}){
     return(
         <div className='box-card-posts' >  
-            <span className='temaCard'>{tema}</span>
+            <span className='card-posts__tema'>{tema}</span>
 
-            <p>{titulo}</p>
+            <p className='card-posts__titulo'>{titulo}</p>
 
             <span>{data}</span>
         </div>
