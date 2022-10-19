@@ -57,6 +57,10 @@
                     font-size: 22px;
                 }
             }
+
+            @include responsive(xs){
+                width: 100%;
+            }
         }
     
         .mainPosts__box-rigth{
