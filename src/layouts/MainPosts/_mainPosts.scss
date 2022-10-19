@@ -74,6 +74,7 @@
 
             @include responsive(xs){
                 width: 70%;
+                margin-left: 12px;
             }
     
             .mainPosts-box-img{
@@ -86,6 +87,15 @@
     
                 img{
                     width: 59%;
+                }
+            }
+
+            .mainPosts__box-iconsCircle{
+                color: $button-rosa1;
+
+                svg{
+                    width: 10px;
+                    height: 10px;
                 }
             }
     

@@ -5,6 +5,7 @@ import ButtonMore from '../../components/ButtonSeeMore/ButtonMore';
 import CardPostsMain from '../../components/CardPostsMain/CardPostsMain';
 import bdSectionPosts from "../../json/sectionsbd.json"
 import { useEffect, useState } from 'react';
+import { BsFillRecordFill } from "react-icons/bs";
 
 function MainPosts(){
     const [arrayFilter, setArrayFilter] = useState([])
@@ -30,7 +31,7 @@ function MainPosts(){
                     <div className="mainPosts-box-img">
                         <img src={imagemMulher} alt="imagem mulher comendo biscoito e vendo algo no computador"/>
                     </div>
-
+                    <div className='mainPosts__box-iconsCircle'> <BsFillRecordFill/> <BsFillRecordFill/> <BsFillRecordFill/> <BsFillRecordFill/> <BsFillRecordFill/> <BsFillRecordFill/></div>
                     <div className='mainPosts__box-typeEdate'><span>TECNOLOGIA</span> <p>11/11/2022</p></div>
 
                     <h3 className='mainPosts__titulo'>Contando com a tecnologia para o treinamento de especialistas no atendimento</h3>
