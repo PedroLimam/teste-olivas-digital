@@ -1,0 +1,39 @@
+{   "cases":[
+    {
+        "id": 1,
+        "titulo": "Uma decada de história em governador valadares",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+
+    },
+    {
+        "id": 2,
+        "titulo": "A chegada das empresas nativas digitais revoluciona o tradicional ambiente de cal center",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    },
+    {
+        "id": 3,
+        "titulo": "Pernambucanas digitaliza a operação e melghora a experiencia do cliente",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    },
+    {
+        "id": 4,
+        "titulo": "Pernambucanas digitaliza a operação e melghora a experiencia do cliente",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    },
+    {
+        "id": 5,
+        "titulo": "Uma decada de história em governador valadares",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    },
+    {
+        "id": 6,
+        "titulo": "Pernambucanas digitaliza a operação e melghora a experiencia do cliente",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    },
+    {
+        "id": 7,
+        "titulo": "Pernambucanas digitaliza a operação e melghora a experiencia do cliente",
+        "explicacao": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laudantium omnis perspiciatis id quidem esse sit perferendis tempore similique non!"
+    }
+]
+}

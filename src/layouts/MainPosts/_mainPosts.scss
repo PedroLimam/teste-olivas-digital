@@ -1,0 +1,117 @@
+@import '../../css/partials/colors';
+@import '../../css/partials/mixinsDesigns';
+
+.container-mainPosts{
+    background-color: $mainPosts-bg;
+    position: relative;
+    
+    p{
+        display: inline-block;
+    }
+    
+    .box-layouts{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 35px;
+
+        @include responsive(s){
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mainPosts__box-left{
+            width: 500px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .btn-seeMore{
+                @include btnMore($white-bg);
+                transition: 600ms ease;
+
+                &:hover{
+                    transform: translateY(-4px);
+                }
+            }
+
+            .mainPosts__titulo{
+                color: $white-titles;
+                margin: 25px 0 55px 0;
+                position: relative;
+        
+                &::after{
+                    content: '';
+                    width: 70px;
+                    height: 6px;
+                    background-color: $white-titles;
+                    border-radius: 20px;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                }
+
+                @include responsive(xs){
+                    font-size: 22px;
+                }
+            }
+        }
+    
+        .mainPosts__box-rigth{
+            width: 500px;
+            height: fit-content;
+            background-color: #f8f9f9;
+            padding: 12px;
+            margin-top: 102px;
+            border-radius: 40px 0 0 0;
+            text-align: start;
+
+            @include responsive(xs){
+                width: 70%;
+            }
+    
+            .mainPosts-box-img{
+                background-color: #fefeff;
+                border-radius: 40px 0 0 0;
+                padding: 5px;
+    
+                img{
+                    width: 59%;
+                    transform: translate(101px, 2px);
+                }
+            }
+    
+            span{
+                @include button-linear-rosa;
+                width: 200px;
+                padding: 4px 10px;
+            }
+    
+            .mainPosts__box-typeEdate{
+                margin: 30px 0 15px 0;
+            }
+    
+            h3{
+                line-height: 133%;
+                margin-bottom: 10px;
+
+                &::after{
+                    display: none;
+                }
+
+                @include responsive(xs){
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+
+    .imgTriangulo{
+        width: 80px;
+        position: absolute;
+        bottom: -56px;
+        left: 0;
+    }
+}

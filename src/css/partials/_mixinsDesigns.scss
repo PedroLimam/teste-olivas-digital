@@ -1,0 +1,42 @@
+@mixin button-linear-rosa(){
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-image: linear-gradient(to right,  $button-rosa1, $button-rosa2);
+    border-radius: 35px;
+    color: white;
+}
+
+@mixin btnMore($color){
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    color: $color;
+    font-weight: bold;
+    border: 1px solid $color;
+    border-radius: 19px;
+}
+
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+@mixin responsive($device) {
+    @if $device == l {
+      @media screen and (max-width: 1440px) and (min-width: 1141px) {
+        @content;
+      }
+    } @else if $device == m {
+      @media screen and (max-width: 1140px) and (min-width: 961px) {
+        @content;
+      }
+    } @else if $device == s {
+      @media screen and (max-width: 960px) {
+        @content;
+      }
+    } @else if $device == xs {
+      @media screen and (max-width: 540px) {
+        @content;
+      }
+    }
+  }

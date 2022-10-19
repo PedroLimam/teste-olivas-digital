@@ -1,0 +1,30 @@
+@import '../../css/partials/colors' ;
+@import '../../css/partials/mixinsDesigns';
+
+.box-card-posts{
+    width: 260px;
+    border-top: 1px solid gray;
+    padding: 1px;
+    text-align: start;
+
+    .temaCard{
+        @include button-linear-rosa;
+        padding: 2px 8px;
+        margin-top: 9px;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    span{
+        display: inline-block;
+        margin-bottom: 18px;
+        color: $sub-title-color;
+    }
+
+    p{
+        line-height: 130%;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}

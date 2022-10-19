@@ -1,0 +1,28 @@
+@import "../../css/partials/mixinsDesigns";
+
+.container-img-home{
+    position: relative;
+    .container__img{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container__img-circulo{
+        width: 204px;
+        height: 204px;
+        position: absolute;
+        right: 5vw;
+        bottom: -102px;
+
+        @include responsive(s){
+            width: 144px;
+            height: 144px;
+        }
+
+        @include responsive(xs){
+            display: none;
+        }
+    }
+
+}

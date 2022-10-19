@@ -1,0 +1,6 @@
+@import '../../css/partials/colors';
+@import '../../css/partials/mixinsDesigns';
+
+.btn-seeMore{
+    @include btnMore($sub-title-color);
+}

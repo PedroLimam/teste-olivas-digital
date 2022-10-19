@@ -1,0 +1,170 @@
+@import '../../css/partials/colors';
+@import '../../css/partials/mixinsDesigns';
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95px;
+
+    @include responsive(s){
+        justify-content: space-between;
+    }
+
+    .nav__img-logo{
+        width: 200px;
+        height: 54px;  
+        margin-right: 20px; 
+        cursor: pointer;
+
+        @include responsive(m){
+            width: 170px;
+            height: 38px;
+        }
+
+        @include responsive(s){
+            width: 170px;
+            height: 38px;
+            margin-left: 24px;
+        }
+    }
+
+    .nav__menu{
+        list-style: none;
+
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 600ms ease;
+
+            &:hover{
+                opacity: 0.8;
+            }
+
+            @include responsive(m){
+                font-size: 14px;
+                margin-right: 10px;
+            }
+        }
+
+        @include responsive(s){
+            display: none;
+        }
+    }
+
+    .btn-home{
+        transition: 600ms ease;
+
+        &:hover{
+            transform: translateY(-4px);
+        }
+
+        @include responsive(m){
+            font-size: 14px;
+            width: 160px;
+            height: 40px;
+        }
+
+        @include responsive(s){
+            display: none;
+        }
+    }
+
+    .bx-label{
+        z-index: 10;
+    }
+
+    .bx{
+        display: none;
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+    
+        &::after{
+            content: '';
+            width: 90%;
+            height: 12%;
+            background-color: black;
+            border-radius: 20px;
+            position: absolute;
+            top: 20%;
+            left: 13%;
+            transition: 500ms ease;
+        }
+    
+        &::before{
+            content: '';
+            width: 60%;
+            height: 12%;
+            background-color: black;
+            border-radius: 20px;
+            position: absolute;
+            right: -2%;
+            top: 55%;
+            transition: 500ms ease;
+        }
+
+        @include responsive(s){
+            display: block;
+        }
+    }
+    
+    #bx-input:checked ~ label .bx::after{
+        transform: rotate(406deg);
+        top: 40%;
+    }
+    #bx-input:checked ~ label .bx::before{
+        width: 90%;
+        transform: rotate(-225deg);
+        top: 40%;
+    }
+    #bx-input:checked ~ label + .menu-hamburguer{
+        transform: translateX(0);
+        display: block;
+    }
+    
+    .menu-hamburguer{
+        transition: all 500ms ease;
+        width: 30vw;
+        height: 100vh;
+        background-color: $white-bg;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+
+        @include responsive(s){
+            width: 40vw;
+        }
+
+        @include responsive(xs){
+            width: 100vw;
+        }
+
+        ul{
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        li{
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    
+        .nav__hamburguer{
+            list-style: none;
+            transform: translateY(20vh);
+        }  
+    }
+}

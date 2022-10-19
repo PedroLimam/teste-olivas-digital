@@ -1,0 +1,188 @@
+@import '../../css/partials/colors';
+@import '../../css/partials/mixinsDesigns';
+
+.container-sectionPosts{
+    text-align: center;
+    margin-bottom: 150px;
+    position: relative;
+
+    .sectionPosts__titulo{
+        color: #00374E;
+        display: inline-block;
+        position: relative;
+        margin: 40px 0 50px 0;
+
+        span{
+          color: #36B6C7;
+        }
+      
+        &::after{
+          content: '';
+          width: 70px;
+          height: 6px;
+          background-color: #36B6C7;
+          border-radius: 20px;
+          position: absolute;
+          bottom: -28px;
+          right: calc(50% - 35px);
+        }
+
+        @include responsive(s){
+            font-size: 22px;
+        }
+    }
+    
+    .sectionsPosts__container-boxItems{
+        display: flex;
+        justify-content: space-evenly;
+
+        .sectionsPosts__box-left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: start;
+            width: 40%;
+    
+            img{
+                width: 495px;
+                height: 427px;
+                margin-top: 80px;
+
+                @include responsive(s){
+                    width: 406px;
+                    height: 364px;
+                }
+
+                @include responsive(xs){
+                    width: 84vw;
+                    height: 39vh;
+                }
+            }
+    
+            span{
+                @include button-linear-rosa;
+                width: fit-content;
+                height: fit-content;
+                padding: 4px 10px;
+                margin: 30px 0 15px 0;
+
+                @include responsive(xs){
+                    font-size: 12px;
+                }
+            
+            }
+    
+            h3{
+                bottom: -28px;
+                right: -12px;
+                
+                @include responsive(s){
+                    font-size: 19px;
+                }
+            }
+    
+            h2{
+                margin-bottom: 15px;
+
+                @include responsive(xs){
+                    font-size: 22px;
+                }
+            }
+    
+            p{
+                color: $sub-title-color;
+                font-size: 14px;
+                line-height: 140%;
+
+            }
+    
+            .sectionPosts__descricao{
+                color: black;
+            }
+
+            @include responsive(xs){
+                width: 70vw;
+            }
+        }
+    
+        .sectionsPosts__box-rigth{
+
+            transform: translate(10px, 98px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+    
+            h4{
+                color: #F390A8;
+                margin-bottom: 10px;
+            }
+
+            button{
+                margin-top: 20px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: -1px;
+                    z-index: -1;
+                    height: 100%;
+                    width: 0%;
+                    background-color: $button-rosa1;
+                    color: $white-bg;
+                    border-radius: inherit;
+                    transition: .7s ease;
+                }
+            
+                &:hover{
+                    border: 0;
+                    color: $white-bg;
+
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @include responsive(s){
+            font-size: 19px;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .img-onda{
+        position: absolute;
+        width: 260px;
+        right: -61px;
+        bottom: -93px;
+
+        @include responsive(s){
+            width: 200px;
+        }
+    }
+
+    .imgSemiCirculo{
+        width: 450px;
+        position: absolute;
+        left: -243px;
+        bottom: -297px; 
+        z-index: 100;   
+
+        @include responsive(s){
+            width: 430px;
+            left: -221px;
+            bottom: -323px;
+        }
+
+        @include responsive(xs){
+            width: 340px;
+        }
+        
+    }
+}
+
