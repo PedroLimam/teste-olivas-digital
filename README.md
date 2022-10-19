@@ -4,7 +4,7 @@
 
 
 
-<strong>Acesse: https://teste-olivas-digital.app/ </strong>
+<strong>Acesse: https://teste-olivas-digital.vercel.app/ </strong>
 
 
 ## 🛠️ Construído com
