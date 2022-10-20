@@ -60,7 +60,8 @@
 
     .btn-home{
         transition: 600ms ease;
-
+        opacity: 0;
+        
         &:hover{
             transform: translateY(-4px);
         }

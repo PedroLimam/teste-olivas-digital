@@ -25,8 +25,8 @@ function Nav(){
             {
                 y: 0,
                 opacity: 1,
-                duration: .5,
                 delay: 0.1,
+                duration: .5,
                 stagger: {each:0.1}
             })
             .fromTo(".btn-home",{
@@ -36,7 +36,8 @@ function Nav(){
             {
                 y: 0,
                 opacity: 1,
-                duration: .5,
+                delay: 0.1,
+                duration: .8,
             })
             .fromTo(".bx",{
                 y: -10,
