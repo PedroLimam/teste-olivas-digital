@@ -17,7 +17,7 @@ function Nav(){
                 y: 0,
                 opacity: 1,
                 duration: 1
-            })
+            },"nav__img-logo")
             .fromTo(".nav__menu-item",{
                 y: -10,
                 opacity: 0
@@ -25,7 +25,7 @@ function Nav(){
             {
                 y: 0,
                 opacity: 1,
-                duration: 1,
+                duration: .5,
                 delay: 0.1,
                 stagger: {each:0.1}
             })
@@ -36,8 +36,17 @@ function Nav(){
             {
                 y: 0,
                 opacity: 1,
-                duration: 1,
+                duration: .5,
             })
+            .fromTo(".bx",{
+                y: -10,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: .5,
+            },"nav__img-logo+=.6")
         },)
 
     return(

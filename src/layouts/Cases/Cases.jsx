@@ -22,7 +22,7 @@ function Cases(){
 
     return(
         <div className='container-cases'>
-            <h3>Cases</h3>
+            <h3 className='container-cases__titulo'>Cases</h3>
 
             <div ref={sliderRef} className="slider">
                 {cases.cases.map(el => <CardCases key={el.id}  titulo={el.titulo} explicacao={el.explicacao} />)}
